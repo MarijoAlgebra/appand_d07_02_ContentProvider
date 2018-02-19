@@ -169,6 +169,7 @@ public class AppProvider extends ContentProvider {
                 }
                 count = db.update(TaskContract.TABLE_NAME, values, additionalSelectionCriteria, selectionArgs);
                 break;
+
             default:
                 throw new IllegalArgumentException("Unknown Uri: " + uri);
         }
